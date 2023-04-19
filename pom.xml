@@ -71,8 +71,13 @@ http://65.0.92.205:9000/
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<artifactId>spring-boot-maven-plugin</artifactId>	
 			</plugin>
+			<plugin>
+                               <groupId>org.jacoco</groupId>
+  			       <artifactId>jacoco-maven-plugin</artifactId>
+  			       <version>0.8.6</version>
+                        </plugin>
 		</plugins>
 	</build>
 
