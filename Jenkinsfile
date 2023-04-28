@@ -5,7 +5,7 @@ pipeline {
         stage("Source") {
           agent any
           steps {
-              git branch: 'master', url: 'https://github.com/BINPIPE/java-springboot-sonarqube.git'
+              git branch: 'master', url: 'https://github.com/saikumarram123/java-springboot-sonarqube'
           }
         }
 
