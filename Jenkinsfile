@@ -10,13 +10,12 @@ pipeline {
         }
 
         
-    stage('build'){
-        steps {    
-        withMaven(maven: 'mvn') {
-            sh "mvn clean package"
-        }
-    }
- }
+        stage("Build") {
+         agent any
+            steps {
+                sh 'mvn clean package'
+            }
+          }
           stage("SonarQube Analysis") {
             agent any  
             steps {
